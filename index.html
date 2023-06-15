@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zhousensor Viewer</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="app">
+    <div class="controller">
+        <div class="upperrow">
+            <div class="slider">
+                <div class="sliderrainbow">
+
+                </div>
+                <img class="sliderimage" src="assets/SLIDER_TEXT.png">
+                <div class="slidervisual">
+                    <div id="rightslider" class="sliderbar">
+                        <img src="./assets/SLIDER_RIGHT.png" class="sliderslide">
+                    </div>
+                    <div id="leftslider" class="sliderbar">
+                        <img src="./assets/SLIDER_LEFT.png" class="sliderslide">
+                    </div>
+                    <div id="rightplusright" class="sliderbar">
+                        <img src="./assets/SLIDER_RIGHT_2.png" class="sliderslide">
+                    </div>
+                    <div id="leftplusleft" class="sliderbar">
+                        <img src="./assets/SLIDER_LEFT_2.png" class="sliderslide">
+                    </div>
+                    <div id="inout" class="sliderbar">
+                        <img src="./assets/SLIDER_IN.png" class="sliderslide">
+                    </div>
+                    <div id="outin" class="sliderbar">
+                        <img src="./assets/SLIDER_OUT.png" class="sliderslide">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="middlerow">
+            <div class="middlebackground">
+                <img class="middlebackgroundimage controllerbg" src="assets/CONTROLLER_BG.png">
+            </div>
+            <div class="facebuttons">
+                <div class="button facebutton" id="button-3">
+                    <div class="unpressed"><img class="buttonimage" src="assets/BTN_SANKAKU_A.png"></div>
+                    <div class="pressed"><img class="buttonimage" src="assets/BTN_SANKAKU_EFF.png"></div>
+                </div>
+                <div class="button facebutton" id="button-2">
+                    <div class="unpressed"><img class="buttonimage" src="assets/BTN_SHIKAKU_A.png"></div>
+                    <div class="pressed"><img class="buttonimage" src="assets/BTN_SHIKAKU_EFF.png"></div>
+                </div>
+                <div class="button facebutton" id="button-0">
+                    <div class="unpressed"><img class="buttonimage" src="assets/BTN_BATSU_A.png"> </div>
+                    <div class="pressed"><img class="buttonimage" src="assets/BTN_BATSU_EFF.png"></div>
+                </div>
+                <div class="button facebutton" id="button-1">
+                    <div class="unpressed"><img class="buttonimage" src="assets/BTN_MARU_A.png"></div>
+                    <div class="pressed"><img class="buttonimage" src="assets/BTN_MARU_EFF.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="lowerrow">
+            <div class="buttonset1">
+
+                    <div class="button" id="button-12">
+                        <div class="unpressed">
+                            <img class="buttonimage smallbuttonimage" src="assets/BTN_UP.png">
+                        </div>
+                        <div class="pressed">
+                            <img class="buttonimage smallbuttonimage" src="assets/BTN_UP_EFF.png">
+                        </div>
+                    </div>
+                    <div class="button" id="button-13">
+                        <div class="unpressed">
+                            <img class="buttonimage smallbuttonimage" src="assets/BTN_DOWN.png">
+                        </div>
+                        <div class="pressed">
+                            <img class="buttonimage smallbuttonimage" src="assets/BTN_DOWN_EFF.png">
+                        </div>
+                    </div>
+                    <div class="button" id="button-14">
+                        <div class="unpressed">
+                            <img class="buttonimage smallbuttonimage" src="assets/BTN_LEFT.png">
+                        </div>
+                        <div class="pressed">
+                            <img class="buttonimage smallbuttonimage" src="assets/BTN_LEFT_EFF.png">
+                        </div>
+                    </div>
+                    <div class="button" id="button-15">
+                        <div class="unpressed">
+                            <img class="buttonimage smallbuttonimage" src="assets/BTN_RIGHT.png">
+                        </div>
+                        <div class="pressed">
+                            <img class="buttonimage smallbuttonimage" src="assets/BTN_RIGHT_EFF.png">
+                        </div>
+                    </div>
+
+            </div>
+            <div class="buttonset2">
+                <div class="button button-4">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_L1.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_L1_EFF.png">
+                    </div>
+                </div>
+                <div class="button button-6">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_L2.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_L2_EFF.png">
+                    </div>
+                </div>
+                <div class="button" id="button-10">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_L3.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_L3_EFF.png">
+                    </div>
+                </div>
+            </div>
+            <div class="buttonset3">
+                <div class="button" id="button-11">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_R3.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_R3_EFF.png">
+                    </div>
+                </div>
+                <div class="button button-7">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_R2.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_R2_EFF.png">
+                    </div>
+                </div>
+                <div class="button button-5">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_R1.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_R1_EFF.png">
+                    </div>
+                </div>
+            </div>
+            <div class="buttonset4">
+                <div class="button" id="button-16">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_HOME.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_HOME_EFF.png">
+                    </div>
+                </div>
+                <div class="button" id="button-8">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_SHARE.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_SHARE_EFF.png">
+                    </div>
+                </div>
+                <div class="button" id="button-9">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_START.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_START_EFF.png">
+                    </div>
+                </div>
+                <div class="button" id="button-17">
+                    <div class="unpressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_TOUCHPAD.png">
+                    </div>
+                    <div class="pressed">
+                        <img class="buttonimage smallbuttonimage" src="assets/BTN_TOUCHPAD_EFF.png">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
