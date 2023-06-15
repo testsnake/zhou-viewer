@@ -10,6 +10,9 @@ const slider = id => {
     if (id >= 1 && id <= 6) {
         document.getElementById(sliders[id - 1]).style.display = 'block';
         flipSliderRainbow(id % 2 !== 0);
+        document.querySelector('.sliderrainbow').style.filter = 'opacity(30%)';
+    } else {
+        document.querySelector('.sliderrainbow').style.filter = '';
     }
 };
 

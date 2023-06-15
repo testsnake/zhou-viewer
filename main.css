@@ -127,6 +127,13 @@
             #7FBFFF, /* blue */
             #BF7FFF, /* indigo */
             #FF7FFF, /* violet */
+            #FF7F7F,  /* red */
+            #FFBF7F, /* orange */
+            #c9c964, /* yellow */
+            #a2da6b, /* green */
+            #7FBFFF, /* blue */
+            #BF7FFF, /* indigo */
+            #FF7FFF, /* violet */
             #FF7F7F  /* red */
     );
     background-size: 200% 100%;
@@ -149,6 +156,7 @@
     height: 49px;
     width: 510px;
     z-index: 100;
+    filter: saturate(400%);
 }
 
 .controllerbg {
